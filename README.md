@@ -12,4 +12,12 @@ This project has 4 Domain layer :
 - Delivery Layer, routers and handlers.
 
 ## Owner
-Dachi
+Fandi Dachi
+
+## Run
+ - Docker
+    * change config.json ( database host to host.docker.internal)
+    - docker build -t user-service -f .\Dockerfile .
+    - docker run -p 8080:8080 user-service
+ - Local
+    - go run .\cmd\server\main.go
